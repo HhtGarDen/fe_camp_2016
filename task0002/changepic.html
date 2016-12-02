@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change Pictures</title>
+    <style>
+        body,html{
+            height: 100%;
+            margin: 0;
+        }
+        body{
+            background-image: url("xx1.jpg");
+            background-size: 100% 100%;
+           background-repeat: no-repeat;
+        }
+        button{
+            margin-left: 54%;
+            margin-top: 20%;
+            height: 49px;
+            width: 240px;
+            border-radius: 3px;
+         }
+        .btn1{
+            background-image: url("xiaoxinbtn-blue.jpg");
+        }
 
+        .btn2{
+            background-image: url("btn-gray.png");
+            position: relative;
+            margin-top: 10%;
+        }
+        .btn3{
+            margin-top: 10%;
+            background-color: azure;
+            font-size: large;
+
+        }
+    </style>
+
+</head>
+<body>
+<div>
+    <button  class="btn1" id="btn1" ></button>
+    <button  class="btn2" id="btn2"></button>
+<button class="btn3" id="b" onmouseover="change(0)" onmouseout="change(1)">请把鼠标放在我这</button>
+</div>
+<script>
+    var btns = document.getElementsByTagName("button");
+    var xx=["xx1.jpg","bw1.jpg"];
+    var btn0a=["xiaoxinbtn-blue.jpg","xiaoxinbtn-gray.jpg"];
+    var btn1a=["btn-gray.png","btn-blue.png"];
+    var b=document.getElementById("b");
+
+   function change(ca){
+       document.body.style.backgroundImage="url('"+xx[ca]+"')";
+       btns[0].style.backgroundImage="url('"+btn0a[ca]+"')";
+       btns[1].style.backgroundImage="url('"+btn1a[ca]+"')";
+   }
+    btns[0].onclick=function(){
+       change(0);
+   }
+    btns[1].onclick=function(){
+        change(1);
+    }
+    b.onclick=function(){
+        window.location.replace("http://user.qzone.qq.com/947265705");
+    }
+
+//for(var i=0;i<btns.length;i++){
+//    btns[i].onclick=function(){
+//        document.body.style.backgroundImage="url('"+xx[i]+"')";
+//        btns[0].style.backgroundImage="url('"+btn0a[i]+"')";
+//        btns[1].style.backgroundImage="url('"+btn1a[i]+"')";
+//    }
+//}
+</script>
+
+</body>
+</html>
