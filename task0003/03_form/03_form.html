@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="03_form.html">
+    <ul>
+        <li>
+            <label for="username">联系人姓名</label>
+            <input type="text" id="username" placeholder="填写负责人的真实姓名" >
+            <div  class="tips" id="user" style="visibility: hidden;">请填写联系人</div>
+        </li>
+        <li>
+            <label for="mobile">联系人手机(11位)</label>
+            <input type="tel" pattern="1\d{11}" id="mobile" placeholder="填写负责人的真实手机号(11位)">
+            <div class="tips"  style="visibility: hidden;">请填写正确的联系电话(11位)</div>
+        </li>
+        <li><label for="apply-province" >公司所在地</label>
+            <select id="apply-province">
+                <option value="">省份</option>
+                <option value="9">安徽</option><option value="36">澳门</option><option value="1">北京</option><option value="33">重庆</option><option value="5">福建</option><option value="11">甘肃</option><option value="4">广东</option><option value="12">广西</option><option value="10">贵州</option><option value="8">海南</option><option value="13">河北</option><option value="14">河南</option><option value="15">黑龙江</option><option value="16">湖北</option><option value="17">湖南</option><option value="18">吉林</option><option value="19">江苏</option><option value="20">江西</option><option value="21">辽宁</option><option value="22">内蒙古</option><option value="23">宁夏</option><option value="24">青海</option><option value="25">山东</option><option value="26">山西</option><option value="27">陕西</option><option value="2">上海</option><option value="28">四川</option><option value="35">台湾</option><option value="3">天津</option><option value="29">西藏</option><option value="34">香港</option><option value="30">新疆</option><option value="31">云南</option><option value="32">浙江</option><option value="37">国外及其他</option></select>
+            <select id="city" class="apply-city" style="display:none;">
+
+                <option value="">城市</option><option value="399">澳门</option></select>
+            <span  id="province" style="visibility: hidden;">请选择省份</span>
+        </li>
+        <li>
+            <label for="company" >公司名称</label>
+            <input type="text" id="company" placeholder="填写公司名称">
+            <div class="tips" style="visibility: hidden;">请填写公司名称</div>
+        </li>
+        <li>
+            <button id="btn" type="submit">提交</button>
+            <button type="reset">重置</button>
+        </li>
+    </ul>
+</form>
+<script>
+
+
+    btn.onclick=function(){
+        var inputs=document.getElementsByTagName("input");
+        var tips=document.getElementsByTagName("div");
+        var btn=document.getElementsByTagName("btn");
+        var pro=document.getElementById("province");
+        if (inputs[0]==""||inputs[0]==null)  tips[0].style.visibility="visible";
+        if (inputs[1]==""||inputs[1]==null)  tips[1].style.visibility="visible";
+        if (inputs[2]==""||inputs[2]==null)  tips[2].style.visibility="visible";
+        var d=document.getElementById("city");
+        var index= d.selectedIndex;
+        var e= d.options[index].value;
+        if (e==""||e==null) pro.style.visibility="visible";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1" class="tb">
+    <!-- caption 必须是table的第一个元素 -->
+    <caption>简历</caption>
+    <tbody>
+    <tr>
+        <th>  姓名  </th>
+        <td><pre>                    </pre></td>
+        <th>  性别  </th>
+
+        <td ><select>
+            <option>男</option>
+            <option>女</option>
+        </select></td>
+        <th rowspan="3">(照片)</th>
+    </tr>
+
+
+    <tr>
+        <th>民族</th>
+        <td ><pre>                    </pre></td>
+        <th>出生日期</th>
+        <td><input type="date"></td>
+
+    </tr>
+    <tr>
+        <th >身高（cm）</th>
+        <td>
+            <input
+                type="number"
+                min="50" max="3.0" step="0.1"
+                 value="170"
+                >
+            <th aria-label="weight">体重（kg）
+        </th>
+        <td><input
+                type="number"
+                min="10" max="150" step="0.1"
+                name="weight" value="62"
+        ></td>
+
+    </tr>
+    <tr>
+
+        <th ><label for="experience">项目经验</label>
+</th>
+        <td colspan="6">
+            <textarea cols="60" rows="8" id="experience"></textarea>
+        </td></tr>
+        <tr>
+            <th rowspan="8"><label for="experience2">实习</label>
+        </th>
+        <td colspan="6">
+            <textarea cols="60" rows="8" id="experience2"></textarea>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课程表啊</title>
+</head>
+<body>
+
+<label>
+    <select id="test" onchange="change()">
+        <option value="5">第5周</option>
+        <option value="6">第6周</option>
+        <option value="7">第7周</option>
+        <option value="8">第8周</option>
+        <option value="9">第9周</option>
+        <option value="10">第10周</option>
+        <option value="11">第11周</option>
+        <option value="12">第12周</option>
+        <option value="13">第13周</option>
+        <option value="14">第14周</option>
+        <option value="15">第15周</option>
+        <option value="16">第16周</option>
+        <option value="17">第17周</option>
+        <option value="18">第18周</option>
+    </select>
+</label>
+<script>
+    function change(){
+        var a=document.getElementById("test");
+        var index=a.selectedIndex ;
+        var b= a.options[index].value;
+        switch (b) {
+            case "5" :
+
+
+            case "6" :alert("没什么可以改的");break;
+            case "7" :
+            case "8" :
+            case "9" :
+            case "10" :
+            case "11" :
+            case "12" :
+            case "13" :
+            case "14" :
+            case "15" :
+            alert("我们每周的课表都一样的，");break;
+
+
+
+            case "16" :
+            case "17" :case "18" :
+                alert("这个学期快完了");break;
+        }}
+        </script>
+
+
+        <table border="1">
+            <caption>课程表</caption>
+    <thead>
+        <tr>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saterday</th>
+        <th>Sunday</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th>08:00<br>1</th>
+        <td rowspan="2">综合英语（一）</td>
+        <td rowspan="2">中国语文</td>
+        <td rowspan="2">微积分</td>
+        <td rowspan="4">工程制图</td>
+        <td rowspan="2"></td>
+        <th rowspan="12" colspan="2">放<br>假</th>
+
+    </tr>
+    <tr>
+        <th>08:55<br>2</th>
+    </tr>
+    <tr>
+        <th>10:10<br>3</th>
+        <td rowspan="2">微积分</td>
+        <td rowspan="2">思修</td>
+        <td rowspan="2">乒乓球</td>
+        <td rowspan="2">军事理论</td>
+    </tr>
+    <tr>
+        <th>11:05<br>4</th>
+    </tr>
+    <tr>
+        <th>14:00<br>5</th>
+        <td rowspan="8"></td>
+        <td rowspan="2">信息技术导论</td>
+        <td rowspan="2"></td>
+        <td id="eeeeee" rowspan="4">专业认知实验</td>
+        <td rowspan="2"></td>
+
+    </tr>
+    <tr>
+        <th>14:50<br>6</th>
+    </tr>
+    <tr>
+        <th>15:55<br>7</th>
+        <td rowspan="2"></td>
+        <td rowspan="2">综合英语</td>
+        <td rowspan="2">微积分</td>
+    </tr>
+    <tr>
+        <th>16:45<br>8</th>
+    </tr>
+    <tr>
+        <th>18:30<br>9</th>
+        <td rowspan="4"></td>
+        <td rowspan="4"></td>
+        <td rowspan="4"></td>
+        <td rowspan="4" >思修</td>
+    </tr>
+    <tr>
+        <th>19:20<br>10</th>
+    </tr>
+    <tr>
+        <th>20:15<br>11</th>
+    </tr><tr>
+        <th>21:05<br>12</th>
+    </tr>
+    </tbody>
+    <tfoot>
+    PS：一至四周军训。第19、20周考试。
+    </tfoot>
+</table>
+
+</body>
+</html>
