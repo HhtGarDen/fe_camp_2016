@@ -1,0 +1,19 @@
+
+body{
+    height: 100%;
+    width: auto;
+    background-color: inherit;
+}
+.tb{
+    background-color:#ccfbff;
+    border-radius: 16px;
+    margin: auto;
+}
+th,td{
+    border: hidden;
+}
+.put_in{
+    border: inherit;
+    content: inherit;
+
+}
