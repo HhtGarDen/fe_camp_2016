@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 1020px;
+    word-wrap: break-word;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;}
+header {
+    position: relative;
+    z-index: 3;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 6px;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-bottom: 1px solid rgba(0,0,0,0.075);
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    display: block;
+}
+#first{
+    float: left;
+
+}
+.word_header{
+    position: relative;
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-top: 0;
+}
+.word2{
+    float: right;
+}
+#btn1{
+    float: left;
+    background-color: inherit;
+    font-family: inherit;
+    border: none;
+}
+svg{
+
+}
+.btn{
+    position: relative;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #333;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    background-color: #eee;
+    background-image: linear-gradient(#fcfcfc, #eee);
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    float: right;
+    margin-right: 4px !important;
+}
+#btn2{
+    background-color: chartreuse;
+
+}
+.put_right{
+    float: right;
+}
+#put_in{
+    float: right;
+    min-height: 32px;
+}
+.put_left{
+    float: left;
+}
+#main_left{
+    padding-right: 16px !important;
+    width: 25%;
+    display: block;
+}
+.hht{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    color: #666;
+}
+.underline{
+    display: table-cell;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #767676;
+    vertical-align: middle;
+    border-bottom: 2px solid transparent;
+}
+.information{padding-left: 8px !important;
+    float: left !important;
+    width: 75%;
+}
+.selected{
+    color: #333;
+    border-bottom-color: #c9510c;
+    display: table-cell;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 14px;
+    vertical-align: middle;
+
+}
+.blank{
+    background-color: #fff;
+    border-bottom: solid 1px #ddd;
+    top: 0 !important;
+    position: static;
+}
+.position-relative{
+    position: relative !important;
+}
+.blankslate{
+    position: relative;
+    padding: 32px;
+    text-align: center;
+    background-color: #fafafa;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    box-shadow: inset 0 0 10px;
+    margin-top: 24px !important;
+}
+.site-footer-container{
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.site-footer-container:before,.site-footer::before{display: table;
+    content: "";}
+.vi{
+    visibility: hidden;
+}
+.site-footer-links{
+    margin: 0;
+    list-style: none;
+    float: right;
+}
+.site-footer-links li {
+    display: inline-block;
+    line-height: 16px;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.site-footer .octicon-mark-github {
+    position: absolute;
+    top: 38px;
+    left: 50%;
+    margin-left: -12px;
+    font-size: 24px;
+    color: #ccc;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+.octicon {
+    vertical-align: text-bottom;
+    display: inline-block;
+    fill: currentColor;
+}
+
+html|* > svg {
+    transform-origin: 50% 50% 0px;
+    height: 24px;
+    width: 24px;
+}
