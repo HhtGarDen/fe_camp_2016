@@ -1,6 +1,6 @@
 dd{
     display: none;
 }
-dt:hover dd{
+dt:hover~dd{
     display: block;
 }
