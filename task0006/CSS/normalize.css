@@ -1,0 +1,46 @@
+.put_left{
+    float: left;
+}
+.put_right{
+    float: right;
+}
+body{
+    text-align:center;
+    font-family: "\5B8B\4F53",serif;
+    background-image: url("../img/background.jpg");
+    font-size: 16px;
+    display: block;
+    background-repeat: no-repeat;
+background-size: 100% 100%;
+}
+html, body{
+    height:100%;
+    margin: 0;
+}
+.posi_rela{
+    position: relative;
+    _position:relative;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 100px;
+}
+p{
+    margin: 0 0;
+    font-size: 20px;
+}
+li{
+    list-style: none;
+    margin: 0;
+    margin-bottom: 10px;
+    overflow: hidden;
+    *zoom: 1;
+    padding: 0;
+    width: 100%;
+    float: left;
+}
+.posi-abso{
+    position:absolute; !important;
+}
